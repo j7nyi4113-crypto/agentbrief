@@ -1,0 +1,45 @@
+{
+  "name": "agentbrief",
+  "version": "0.1.0",
+  "description": "AGENTS.md that can't go stale — generated from your repo, verified in CI.",
+  "type": "module",
+  "bin": {
+    "agentbrief": "bin/agentbrief.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.js\"",
+    "check": "node bin/agentbrief.js check",
+    "demo": "node bin/agentbrief.js init --dry-run"
+  },
+  "keywords": [
+    "agents-md",
+    "agents",
+    "ai-agents",
+    "coding-agents",
+    "claude-code",
+    "codex",
+    "cursor",
+    "documentation",
+    "cli",
+    "ci"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j7nyi4113-crypto/agentbrief.git"
+  },
+  "bugs": {
+    "url": "https://github.com/j7nyi4113-crypto/agentbrief/issues"
+  },
+  "homepage": "https://github.com/j7nyi4113-crypto/agentbrief#readme"
+}

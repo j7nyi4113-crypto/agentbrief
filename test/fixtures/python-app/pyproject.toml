@@ -1,0 +1,15 @@
+[project]
+name = "fixture-python"
+version = "0.1.0"
+description = "A tiny Python fixture."
+requires-python = ">=3.11"
+dependencies = ["fastapi>=0.110"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.mypy]
+strict = true
