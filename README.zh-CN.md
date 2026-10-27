@@ -40,8 +40,19 @@
 ## 快速开始
 
 ```bash
-npx agentbrief init      # 从仓库生成 AGENTS.md
-npx agentbrief check     # 校验；有漂移时退出码 1
+# 直接从 GitHub 运行，现在就能用
+npx github:j7nyi4113-crypto/agentbrief init
+npx github:j7nyi4113-crypto/agentbrief check
+
+# 发布到 npm 之后
+npx agentbrief init
+```
+
+或者装一次，长期使用：
+
+```bash
+npm i -g github:j7nyi4113-crypto/agentbrief
+agentbrief init
 ```
 
 `init` 不会覆盖你已有的文件。如果 `AGENTS.md` 存在但没有生成区块，它会把区块追加到末尾，你的内容原样保留。
@@ -134,6 +145,10 @@ jobs:
 **会覆盖我改的内容吗？**
 只覆盖 `<!-- agentbrief:begin -->` 和 `<!-- agentbrief:end -->` 之间的部分，其余逐字节保留。
 如果你改了区块内部，`update` 会把它替换掉——这是约定。
+
+**发布到 npm 了吗？**
+还没有——发布需要维护者有 registry 权限。在那之前用 GitHub 安装
+（`npx github:j7nyi4113-crypto/agentbrief`）或直接 clone；这个包零依赖，没有构建步骤。
 
 **支持 Claude Code / Codex / Cursor 吗？**
 支持，它们都读 `AGENTS.md`。如果你的工具只认 `CLAUDE.md`，让它引用同一个文件即可：

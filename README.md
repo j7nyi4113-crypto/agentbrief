@@ -41,8 +41,19 @@ No API key. No network. No dependencies. It runs in about 40 ms, so it belongs i
 ## Quick start
 
 ```bash
-npx agentbrief init      # write AGENTS.md from the repository
-npx agentbrief check     # verify it; exits 1 when something drifted
+# straight from GitHub — works today
+npx github:j7nyi4113-crypto/agentbrief init
+npx github:j7nyi4113-crypto/agentbrief check
+
+# once published to npm
+npx agentbrief init
+```
+
+Or install it once and keep it:
+
+```bash
+npm i -g github:j7nyi4113-crypto/agentbrief
+agentbrief init
 ```
 
 `init` never overwrites a file you already have. If `AGENTS.md` exists without a generated block,
@@ -159,6 +170,11 @@ Yes. They all read `AGENTS.md`. If your tool insists on `CLAUDE.md`, point it at
 ```md
 @AGENTS.md
 ```
+
+**Is it on npm?**
+Not yet — publishing needs a maintainer with registry access. Until then, install from GitHub
+(`npx github:j7nyi4113-crypto/agentbrief`) or clone the repo; the package has no dependencies, so
+there is nothing to build.
 
 **Why is the block full of tables?**
 Because agents read tables well, and tables diff well. A changed command shows up as one changed
