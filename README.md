@@ -123,7 +123,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npx agentbrief check
+      - run: npx agentsbrief check
 ```
 
 When it fails, the output names the broken fact and the file that no longer backs it, so the fix is

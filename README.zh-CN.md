@@ -109,7 +109,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npx agentbrief check
+      - run: npx agentsbrief check
 ```
 
 失败时会指出是哪条事实坏了、哪个文件不再支撑它，修复通常只需要改一行 `package.json`，或者跑一次

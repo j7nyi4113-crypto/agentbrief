@@ -8,7 +8,7 @@ body:
       label: What happened
       description: The command you ran, and what it printed.
       placeholder: |
-        $ npx agentbrief check
+        $ npx agentsbrief check
         ✗ npm run build  package.json: `scripts.build` no longer exists
     validations:
       required: true

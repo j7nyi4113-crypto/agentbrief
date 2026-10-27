@@ -25,8 +25,8 @@ const HELP = `
     --help        print this
 
   ${c.bold('Examples')}
-    npx agentbrief init
-    npx agentbrief check --json
+    npx agentsbrief init
+    npx agentsbrief check --json
     agentbrief update docs/
 
   ${c.dim('Docs: https://github.com/j7nyi4113-crypto/agentbrief')}
