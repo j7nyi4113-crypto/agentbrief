@@ -161,7 +161,8 @@ function runCheck(root, flags) {
   const bits = [];
   if (errors) bits.push(`${errors} broken`);
   if (warns) bits.push(`${warns} stale`);
-  process.stdout.write(`\n  ${c.gray(bits.join(' · '))} ${c.gray('→')} agentbrief update\n\n`);
+  const next = exists(path.join(root, 'AGENTS.md')) ? 'agentbrief update' : 'agentbrief init';
+  process.stdout.write(`\n  ${c.gray(bits.join(' · '))} ${c.gray('→')} ${next}\n\n`);
 
   return result.ok ? 0 : 1;
 }

@@ -50,6 +50,15 @@ test('cli: check exits 1 after the repo drifts', () => {
   assert.match(check.stdout, /scripts\.lint/);
 });
 
+test('cli: suggests init when AGENTS.md is missing', () => {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'agentbrief-cli-'));
+  copyDir(path.join(here, 'fixtures', 'node-app'), dir);
+
+  const check = run(['check'], dir);
+  assert.equal(check.status, 1);
+  assert.match(check.stdout, /agentbrief init/);
+});
+
 test('cli: --json check is machine readable', () => {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'agentbrief-cli-'));
   copyDir(path.join(here, 'fixtures', 'node-app'), dir);

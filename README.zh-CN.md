@@ -11,7 +11,7 @@
 
 [![dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)](package.json)
 [![node](https://img.shields.io/badge/node-%3E%3D18-blue)](package.json)
-[![tests](https://img.shields.io/badge/tests-12%20passing-brightgreen)](test)
+[![tests](https://img.shields.io/badge/tests-13%20passing-brightgreen)](test)
 [![license](https://img.shields.io/badge/license-MIT-black)](LICENSE)
 
 [English](README.md) · [简体中文](README.zh-CN.md)
