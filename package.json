@@ -1,10 +1,11 @@
 {
-  "name": "agentbrief",
+  "name": "agentsbrief",
   "version": "0.1.0",
   "description": "AGENTS.md that can't go stale — generated from your repo, verified in CI.",
   "type": "module",
   "bin": {
-    "agentbrief": "bin/agentbrief.js"
+    "agentbrief": "bin/agentbrief.js",
+    "agentsbrief": "bin/agentbrief.js"
   },
   "files": [
     "bin",

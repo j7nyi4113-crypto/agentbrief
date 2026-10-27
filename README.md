@@ -45,8 +45,8 @@ No API key. No network. No dependencies. It runs in about 40 ms, so it belongs i
 npx github:j7nyi4113-crypto/agentbrief init
 npx github:j7nyi4113-crypto/agentbrief check
 
-# once published to npm
-npx agentbrief init
+# from npm
+npx agentsbrief init
 ```
 
 Or install it once and keep it:
@@ -172,9 +172,12 @@ Yes. They all read `AGENTS.md`. If your tool insists on `CLAUDE.md`, point it at
 ```
 
 **Is it on npm?**
-Not yet — publishing needs a maintainer with registry access. Until then, install from GitHub
-(`npx github:j7nyi4113-crypto/agentbrief`) or clone the repo; the package has no dependencies, so
-there is nothing to build.
+The package is called `agentsbrief`, because `agentbrief` was already taken on npm by an unrelated
+project. It is not published yet — publishing needs a maintainer with registry access. Install from
+GitHub until then; the package has no dependencies, so there is nothing to build.
+
+The binary is `agentbrief` (with `agentsbrief` as an alias), so the commands below stay the same
+either way.
 
 **Why is the block full of tables?**
 Because agents read tables well, and tables diff well. A changed command shows up as one changed

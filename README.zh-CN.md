@@ -44,8 +44,8 @@
 npx github:j7nyi4113-crypto/agentbrief init
 npx github:j7nyi4113-crypto/agentbrief check
 
-# 发布到 npm 之后
-npx agentbrief init
+# 从 npm 安装
+npx agentsbrief init
 ```
 
 或者装一次，长期使用：
@@ -147,8 +147,11 @@ jobs:
 如果你改了区块内部，`update` 会把它替换掉——这是约定。
 
 **发布到 npm 了吗？**
-还没有——发布需要维护者有 registry 权限。在那之前用 GitHub 安装
-（`npx github:j7nyi4113-crypto/agentbrief`）或直接 clone；这个包零依赖，没有构建步骤。
+包名是 `agentsbrief`——因为 `agentbrief` 这个名字在 npm 上已经被另一个无关项目占用了。
+目前还没有发布，发布需要维护者有 registry 权限。在那之前请从 GitHub 安装；
+这个包零依赖，没有构建步骤。
+
+可执行命令仍然是 `agentbrief`（另有 `agentsbrief` 别名），所以下面所有命令都不用改。
 
 **支持 Claude Code / Codex / Cursor 吗？**
 支持，它们都读 `AGENTS.md`。如果你的工具只认 `CLAUDE.md`，让它引用同一个文件即可：
