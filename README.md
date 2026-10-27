@@ -118,6 +118,8 @@ jobs:
 When it fails, the output names the broken fact and the file that no longer backs it, so the fix is
 usually one line in `package.json` or one `agentbrief update`.
 
+Ready to copy: [`docs/ci.yml`](docs/ci.yml).
+
 ## What it detects
 
 | Ecosystem | Read from | Commands |
@@ -172,8 +174,8 @@ line in review, not as a rewritten paragraph.
 ## Contributing
 
 Issues and PRs are welcome. Run `npm test` before opening a PR, and run
-`node bin/agentbrief.js update` if you changed a script or moved a directory — the repo checks its
-own `AGENTS.md` in CI.
+`node bin/agentbrief.js update` if you changed a script or moved a directory — this repository keeps
+its own `AGENTS.md` honest with the workflow in [`docs/ci.yml`](docs/ci.yml).
 
 ## License
 

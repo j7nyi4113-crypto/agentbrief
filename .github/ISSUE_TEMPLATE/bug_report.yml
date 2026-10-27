@@ -1,0 +1,34 @@
+name: Bug report
+description: Something detected wrong, or check fails when it should not
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: The command you ran, and what it printed.
+      placeholder: |
+        $ npx agentbrief check
+        ✗ npm run build  package.json: `scripts.build` no longer exists
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected instead
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: agentbrief version
+      placeholder: 0.1.0
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: OS and Node version
+      placeholder: macOS 15 / Node 22.11
+    validations:
+      required: true

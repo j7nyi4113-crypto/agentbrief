@@ -102,7 +102,7 @@ jobs:
 ```
 
 失败时会指出是哪条事实坏了、哪个文件不再支撑它，修复通常只需要改一行 `package.json`，或者跑一次
-`agentbrief update`。
+`agentbrief update`。可直接复制的版本：[`docs/ci.yml`](docs/ci.yml)。
 
 ## 检测范围
 
