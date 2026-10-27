@@ -11,7 +11,7 @@ and fails CI when they stop being true.
 
 [![dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)](package.json)
 [![node](https://img.shields.io/badge/node-%3E%3D20-blue)](package.json)
-[![tests](https://img.shields.io/badge/tests-13%20passing-brightgreen)](test)
+[![CI](https://github.com/j7nyi4113-crypto/agentbrief/actions/workflows/ci.yml/badge.svg)](https://github.com/j7nyi4113-crypto/agentbrief/actions/workflows/ci.yml)
 [![license](https://img.shields.io/badge/license-MIT-black)](LICENSE)
 
 [English](README.md) · [简体中文](README.zh-CN.md)
