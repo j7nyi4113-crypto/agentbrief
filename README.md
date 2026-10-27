@@ -7,7 +7,7 @@
 `agentbrief` writes the facts in `AGENTS.md` from your repository —
 and fails CI when they stop being true.
 
-<img src="assets/demo.svg" alt="agentbrief init, then check failing after a script is renamed" width="880">
+<img src="https://raw.githubusercontent.com/j7nyi4113-crypto/agentbrief/main/assets/demo.svg" alt="agentbrief init, then check failing after a script is renamed" width="880">
 
 [![dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)](package.json)
 [![node](https://img.shields.io/badge/node-%3E%3D18-blue)](package.json)

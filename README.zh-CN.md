@@ -7,7 +7,7 @@
 `agentbrief` 从仓库里读出事实写进 `AGENTS.md`，
 并在这些事实失效时让 CI 失败。
 
-<img src="assets/demo.svg" alt="agentbrief 初始化，重命名脚本后 check 失败" width="880">
+<img src="https://raw.githubusercontent.com/j7nyi4113-crypto/agentbrief/main/assets/demo.svg" alt="agentbrief 初始化，重命名脚本后 check 失败" width="880">
 
 [![dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)](package.json)
 [![node](https://img.shields.io/badge/node-%3E%3D18-blue)](package.json)
