@@ -9,7 +9,7 @@ Everything above the block is yours — that is the part no tool can write for y
 
 `agentbrief` keeps AGENTS.md honest. It reads a repository's manifests, lockfiles and CI
 workflows, writes the verifiable facts into a managed block, and re-checks them later.
-Zero dependencies, plain ESM, Node 18+. "Done" means: `npm test` passes and
+Zero dependencies, plain ESM, Node 20+. "Done" means: `npm test` passes and
 `node bin/agentbrief.js check` exits 0 on this repository.
 
 ## How to work here
@@ -33,7 +33,7 @@ Zero dependencies, plain ESM, Node 18+. "Done" means: `npm test` passes and
   `node bin/agentbrief.js update`, or CI fails on purpose.
 
 <!-- agentbrief:begin -->
-<!-- agentbrief:meta {"v":1,"commands":[{"key":"install","cmd":"npm install","src":"package.json"},{"key":"test","cmd":"npm run test","src":"package.json#scripts.test"}],"dirs":[".github","assets","bin","docs","src","test"]} -->
+<!-- agentbrief:meta {"v":1,"commands":[{"key":"install","cmd":"npm install","src":"package.json"},{"key":"test","cmd":"npm run test","src":"package.json#scripts.test"}],"dirs":[".github","assets","bin","src","test"]} -->
 
 ## Repo facts
 
@@ -52,12 +52,15 @@ Zero dependencies, plain ESM, Node 18+. "Done" means: `npm test` passes and
 
 | Path | Contents |
 | --- | --- |
-| `.github/` | 2 files |
+| `.github/` | 3 files |
 | `assets/` | static assets · 1 file |
 | `bin/` | 1 file |
-| `docs/` | documentation · 1 file |
 | `src/` | source · 6 files |
 | `test/` | tests · 11 files |
+
+### CI
+
+- `.github/workflows/ci.yml` runs on push, pull_request — `npm test`, `node bin/agentbrief.js check`
 
 ### Conventions
 

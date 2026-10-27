@@ -10,7 +10,7 @@ and fails CI when they stop being true.
 <img src="https://raw.githubusercontent.com/j7nyi4113-crypto/agentbrief/main/assets/demo.svg" alt="agentbrief init, then check failing after a script is renamed" width="880">
 
 [![dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)](package.json)
-[![node](https://img.shields.io/badge/node-%3E%3D18-blue)](package.json)
+[![node](https://img.shields.io/badge/node-%3E%3D20-blue)](package.json)
 [![tests](https://img.shields.io/badge/tests-13%20passing-brightgreen)](test)
 [![license](https://img.shields.io/badge/license-MIT-black)](LICENSE)
 
@@ -129,7 +129,7 @@ jobs:
 When it fails, the output names the broken fact and the file that no longer backs it, so the fix is
 usually one line in `package.json` or one `agentbrief update`.
 
-Ready to copy: [`docs/ci.yml`](docs/ci.yml).
+Ready to copy: [`.github/workflows/ci.yml`](.github/workflows/ci.yml).
 
 ## What it detects
 
@@ -194,7 +194,7 @@ line in review, not as a rewritten paragraph.
 
 Issues and PRs are welcome. Run `npm test` before opening a PR, and run
 `node bin/agentbrief.js update` if you changed a script or moved a directory — this repository keeps
-its own `AGENTS.md` honest with the workflow in [`docs/ci.yml`](docs/ci.yml).
+its own `AGENTS.md` honest with the workflow in [`.github/workflows/ci.yml`](.github/workflows/ci.yml).
 
 ## License
 

@@ -15,10 +15,10 @@
     "LICENSE"
   ],
   "engines": {
-    "node": ">=18.17"
+    "node": ">=20"
   },
   "scripts": {
-    "test": "node --test \"test/*.test.js\"",
+    "test": "node --test test/detect.test.js test/check.test.js test/cli.test.js",
     "check": "node bin/agentbrief.js check",
     "demo": "node bin/agentbrief.js init --dry-run"
   },

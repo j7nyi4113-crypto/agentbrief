@@ -10,7 +10,7 @@
 <img src="https://raw.githubusercontent.com/j7nyi4113-crypto/agentbrief/main/assets/demo.svg" alt="agentbrief 初始化，重命名脚本后 check 失败" width="880">
 
 [![dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)](package.json)
-[![node](https://img.shields.io/badge/node-%3E%3D18-blue)](package.json)
+[![node](https://img.shields.io/badge/node-%3E%3D20-blue)](package.json)
 [![tests](https://img.shields.io/badge/tests-13%20passing-brightgreen)](test)
 [![license](https://img.shields.io/badge/license-MIT-black)](LICENSE)
 
@@ -113,7 +113,7 @@ jobs:
 ```
 
 失败时会指出是哪条事实坏了、哪个文件不再支撑它，修复通常只需要改一行 `package.json`，或者跑一次
-`agentbrief update`。可直接复制的版本：[`docs/ci.yml`](docs/ci.yml)。
+`agentbrief update`。可直接复制的版本：[`.github/workflows/ci.yml`](.github/workflows/ci.yml)。
 
 ## 检测范围
 
